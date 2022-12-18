@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trevel website</title>
+   <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
+  />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+ 
+    <!-- css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    >
+</script>
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a  href="#" class="logo"> <i class='fas fa-plane'></i><i class='far fa-heart'></i> dream travel explore </a>
+
+    <nav class="navbar">
+        <a  href="index.html">home</a>
+        <a  href="about_us.html">about us</a>
+        <a  href="tours.html">tours</a>
+        <a href="gallery.html">gallery</a>
+
+
+    <a  href="#book-form" id="form"class="btn">book now</a>
+
+</header>
+
+<!-- header section ends -->
+<!-- login form container  -->
+
+<div class="login-form-container">
+
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form action="">
+        <h3>book now</h3>
+        <input type="email" id="email"class="box" placeholder="enter your email">
+        <input type="tel" id="tel"class="box" placeholder="enter your number">
+        <input type="text"id="city" class="box" placeholder="enter city">
+        <input type="number"id="number" min="1" class="box" placeholder="number of persons">
+        <input type="date"id="date1" class="box" placeholder="arrivals">
+        <input type="date"id="date2" class="box" placeholder="leaving">
+        <textarea placeholder="your message..."id="message" cols="69" rows="5"></textarea>
+         <button class="btn" onclick="sendMail()">Book now</button>
+    </form>
+
+</div>
+
+
+
+<div class="description">
+    <div class="log" ></div>
+    <p></p>
+</div>
+<div class="swiper slider slider_main">
+    <div class="swiper-wrapper slier__wrapper">
+
+        <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="20%" style="background-image: url(images/gallery24.png);"></div>
+        </div>
+        <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="30%" style="background-image: url(images/gallery17.png);"></div>
+        </div>
+        <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="20%" style="background-image: url(images/gallery6.png);"></div>
+        </div>
+        <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="30%" style="background-image: url(images/gallery15.png);"></div>
+        </div>
+        <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="20%" style="background-image: url(images/gallery19.png);"></div>
+        </div>
+        <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="30%" style="background-image: url(images/gallery13.png);"></div>
+        </div>
+        <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="20%" style="background-image: url(images/gallery14.png);"></div>
+        </div>
+        <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="30%" style="background-image: url(images/gallery17.png);"></div>
+        </div>
+        <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="20%" style="background-image: url(images/gallery21.png);"></div>
+        </div>
+
+    </div>
+</div>
+
+<div class="swiper slider slider_main">
+    <div class="swiper-wrapper slier__wrapper">
+
+        <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="20%" style="background-image: url(images/gallery1.png);"></div>
+        </div>
+        <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="30%" style="background-image: url(images/gallery2.png);"></div>
+        </div>
+        <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="20%" style="background-image: url(images/gallery22.png);"></div>
+        </div>
+        <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="30%" style="background-image: url(images/gallery26.png);"></div>
+        </div>
+        <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="20%" style="background-image: url(images/gallery28.png);"></div>
+        </div>
+        <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="30%" style="background-image: url(images/gallery9.jpg);"></div>
+        </div>
+        <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="20%" style="background-image: url(images/gallery18.png);"></div>
+        </div>
+        <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="30%" style="background-image: url(images/gallery12.png);"></div>
+        </div>
+        <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="20%" style="background-image: url(images/gallery20.jpg);"></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="swiper slider slider_main">
+    <div class="swiper-wrapper slier__wrapper">
+
+        <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="20%" style="background-image: url(images/gallery10.png);"></div>
+        </div>
+        <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="30%" style="background-image: url(images/gallery7.png);"></div>
+        </div>
+        <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="20%" style="background-image: url(images/gallery11.png);"></div>
+        </div>
+        <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="30%" style="background-image: url(images/gallery16.png);"></div>
+        </div>
+        <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="20%" style="background-image: url(images/gallery25.png);"></div>
+        </div>
+        <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="30%" style="background-image: url(images/gallery29.png);"></div>
+        </div>
+        <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="20%" style="background-image: url(images/gallery30.png);"></div>
+        </div>
+        <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="30%" style="background-image: url(images/gallery32.png);"></div>
+        </div>
+        <div class="swiper-slide slider__item">
+            <div class="slider__img" data-swiper-parallax="20%" style="background-image: url(images/gallery27.png);"></div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box" data-aos="fade-up" >
+            <a href="#" class="logo"> <i class='fas fa-plane'></i><i class='far fa-heart'></i> dream travel explore </a>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href ="#"class="fab fa-vk"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="about_us.html" class="links"> <i class="fas fa-arrow-right"></i> about us  </a>
+            <a href="tours.html" class="links"> <i class="fas fa-arrow-right"></i> tours </a>
+            <a href="gallery.html" class="links"> <i class="fas fa-arrow-right"></i> gallery </a>
+        </div>
+
+        <div class="box" >
+            <h3>contact info</h3>
+            <p> <i class="fas fa-map"></i> Saint-Petersburg, Russia </p>
+            <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
+            <p> <i class="fas fa-envelope"></i> dream_travel_explore@gmail.com </p>
+            <p> <i class="fas fa-clock"></i> 9:00am - 9:00pm </p>
+        </div>
+
+        <div class="box" >
+            <h3>newsletter</h3>
+            <p>subscribe to the newsletter to know about discounts on tours</p>
+            <form action="">
+                <input type="email" name="" placeholder="enter your email" class="email" id="">
+                <input type="submit" value="subscribe" class="btn">
+            </form>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- footer section ends -->
+<script src="libs/swiper/swiper-bundle.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/javascript.js"></script>
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+></script>
+<script type="text/javascript">
+  (function () {
+    emailjs.init("zq-tVoO0xM_NRBeCH");
+  })();
+</script>
+
+
+</body>
+</html>
